@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/aem-ua-ramp-up/:/",
+    "/content/aem-ua-ramp-up/configuration:/.helix/config.json",
+    "/content/aem-ua-ramp-up/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/aem-ua-ramp-up/"
   ]
 }
