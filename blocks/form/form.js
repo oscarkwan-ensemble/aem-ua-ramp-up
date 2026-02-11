@@ -19,7 +19,7 @@ export default function decorate(block) {
 
   // Build the form HTML
   const formHTML = `
-    <div class="form-container">
+    <div class="form-inner">
       <div class="form-header">
         <h2>${title}</h2>
         <p>${description}</p>

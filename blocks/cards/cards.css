@@ -38,18 +38,61 @@
   line-height: 1.5;
 }
 
+/* Phone numbers and emails should be plain text links, not buttons */
+.cards .cards-card-body a.button {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  white-space: normal;
+  overflow: visible;
+}
+
+.cards .cards-card-body a.button:hover {
+  background-color: transparent;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* Email links styling */
+.cards .cards-card-body a[href^="mailto:"] {
+  color: var(--link-color);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+}
+
+.cards .cards-card-body a[href^="mailto:"]:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
 .cards .cards-card-image {
   line-height: 0;
   overflow: hidden;
 }
 
+/* Consistent image sizing across all cards */
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .cards > ul > li:hover img {
   transform: scale(1.05);
+}
+
+@media (width >= 900px) {
+  .cards > ul > li img {
+    height: 260px;
+  }
 }

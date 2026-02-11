@@ -1,31 +1,32 @@
-.form-container {
+/* Form block centering — use .form-inner to avoid clash with AEM's .form-container */
+.form .form-inner {
   max-width: 720px;
   margin: 0 auto;
 }
 
-.form-header {
+.form .form-header {
   margin-bottom: 32px;
 }
 
-.form-header h2 {
+.form .form-header h2 {
   margin-top: 0;
   margin-bottom: 8px;
   color: var(--dark-color);
 }
 
-.form-header p {
+.form .form-header p {
   color: var(--text-color);
   margin-top: 0;
 }
 
 /* Fieldset sections */
-.form-section {
+.form .form-section {
   border: none;
   margin: 0 0 24px;
   padding: 0;
 }
 
-.form-section legend {
+.form .form-section legend {
   font-family: var(--heading-font-family);
   font-weight: 600;
   font-size: var(--heading-font-size-xs);
@@ -38,24 +39,24 @@
 }
 
 /* Two-column row */
-.form-row {
+.form .form-row {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
 @media (width >= 600px) {
-  .form-row {
+  .form .form-row {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Fields */
-.form-field {
+.form .form-field {
   margin-bottom: 16px;
 }
 
-.form-field label {
+.form .form-field label {
   display: block;
   margin-bottom: 6px;
   font-weight: 500;
@@ -63,9 +64,9 @@
   color: var(--text-color);
 }
 
-.form-field input,
-.form-field textarea,
-.form-field select {
+.form .form-field input,
+.form .form-field textarea,
+.form .form-field select {
   width: 100%;
   box-sizing: border-box;
   padding: 12px 16px;
@@ -78,7 +79,7 @@
   transition: border-color 0.2s ease;
 }
 
-.form-field select {
+.form .form-field select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23505050' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -87,30 +88,30 @@
   cursor: pointer;
 }
 
-.form-field input:focus,
-.form-field textarea:focus,
-.form-field select:focus {
+.form .form-field input:focus,
+.form .form-field textarea:focus,
+.form .form-field select:focus {
   outline: none;
   border-color: var(--dark-color);
   box-shadow: 0 0 0 3px rgba(26 26 46 / 10%);
 }
 
-.form-field input::placeholder,
-.form-field textarea::placeholder {
+.form .form-field input::placeholder,
+.form .form-field textarea::placeholder {
   color: #999;
 }
 
-.form-field textarea {
+.form .form-field textarea {
   resize: vertical;
   min-height: 140px;
 }
 
 /* Submit button */
-.form-actions {
+.form .form-actions {
   margin-top: 8px;
 }
 
-.form-actions button {
+.form .form-actions button {
   padding: 14px 40px;
   font-size: var(--body-font-size-s);
   font-weight: 600;
@@ -120,27 +121,27 @@
   background-color: var(--link-color);
 }
 
-.form-actions button:hover {
+.form .form-actions button:hover {
   background-color: var(--link-hover-color);
 }
 
 /* Success message */
-.form-success {
+.form .form-success {
   text-align: center;
   padding: 40px 24px;
   background-color: var(--light-color);
   border-radius: 4px;
 }
 
-.form-success p {
+.form .form-success p {
   font-size: var(--body-font-size-m);
   color: var(--text-color);
   margin: 0;
 }
 
 /* Validation styles */
-.form-field input:invalid:not(:placeholder-shown),
-.form-field textarea:invalid:not(:placeholder-shown),
-.form-field select:invalid:not(:placeholder-shown) {
+.form .form-field input:invalid:not(:placeholder-shown),
+.form .form-field textarea:invalid:not(:placeholder-shown),
+.form .form-field select:invalid:not(:placeholder-shown) {
   border-color: #d32f2f;
 }
