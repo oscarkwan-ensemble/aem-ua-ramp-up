@@ -37,7 +37,7 @@ footer .footer a:any-link {
 }
 
 footer .footer a:hover {
-  color: #fff;
+  color: var(--link-color);
   text-decoration: underline;
 }
 

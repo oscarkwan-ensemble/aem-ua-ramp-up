@@ -60,7 +60,7 @@ header nav a:any-link {
   color: #fff;
   text-transform: uppercase;
   font-size: var(--body-font-size-xs);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
@@ -189,7 +189,7 @@ header nav .nav-sections ul {
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 header nav .nav-sections ul > li > ul {

@@ -17,7 +17,6 @@
   margin-right: auto;
   color: #fff;
   font-size: var(--heading-font-size-xxl);
-  text-transform: none;
 }
 
 .hero p {
@@ -40,7 +39,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(26 26 46 / 80%) 0%, rgba(26 26 46 / 50%) 100%);
+  background: rgba(0 0 0 / 60%);
 }
 
 .hero img {

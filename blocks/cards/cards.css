@@ -28,7 +28,7 @@
   text-transform: uppercase;
   font-size: var(--heading-font-size-s);
   margin-top: 0;
-  color: var(--dark-color);
+  color: var(--heading-color);
 }
 
 .cards .cards-card-body p {

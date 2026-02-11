@@ -11,19 +11,20 @@
  */
 
 :root {
-  /* colors */
+  /* colors — Ensemble brand palette */
   --background-color: #fff;
-  --light-color: #f5f5f5;
-  --dark-color: #1a1a2e;
+  --light-color: #eff3f4;
+  --dark-color: #1f5170;
   --text-color: #333;
-  --link-color: #e63946;
-  --link-hover-color: #c5303c;
-  --nav-bg-color: #1a1a2e;
-  --footer-bg-color: #1a1a2e;
+  --link-color: #ff8e2f;
+  --link-hover-color: #d97929;
+  --nav-bg-color: #000;
+  --footer-bg-color: #000;
+  --heading-color: #005273;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: 'Open Sans', 'Open Sans-fallback', sans-serif;
+  --heading-font-family: 'Open Sans', 'Open Sans-fallback', sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -42,16 +43,10 @@
   --nav-height: 72px;
 }
 
-/* fallback fonts */
+/* fallback font */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
+  font-family: 'Open Sans-fallback';
+  size-adjust: 105%;
   src: local('Arial');
 }
 
@@ -112,7 +107,7 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
-  color: var(--dark-color);
+  color: var(--heading-color);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -213,13 +208,13 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: transparent;
-  border: 2px solid var(--dark-color);
-  color: var(--dark-color);
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
 }
 
 a.button.secondary:hover,
 button.secondary:hover {
-  background-color: var(--dark-color);
+  background-color: var(--heading-color);
   color: #fff;
 }
 
