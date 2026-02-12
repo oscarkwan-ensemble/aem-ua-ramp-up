@@ -1,10 +1,23 @@
+/* Location cards — 1 col mobile, 3 cols desktop */
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
+}
+
+@media (width >= 600px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .cards > ul > li {
@@ -128,7 +141,27 @@
   }
 }
 
-/* Team/people cards variant — centered text, name/title/email layout */
+/* Team/people variant — 2 cols, no card styling, centered text */
+.section.highlight .cards > ul {
+  grid-template-columns: 1fr;
+}
+
+@media (width >= 600px) {
+  .section.highlight .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section.highlight .cards > ul > li {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.section.highlight .cards > ul > li:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .section.highlight .cards .cards-card-body {
   text-align: center;
 }

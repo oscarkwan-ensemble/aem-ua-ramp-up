@@ -262,3 +262,51 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Centered section — "Send us an email" style */
+main .section.centered {
+  text-align: center;
+  padding: 40px 0 60px;
+}
+
+main .section.centered h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+main .section.centered p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 4px 0;
+}
+
+main .section.centered .button-container {
+  margin-top: 32px;
+}
+
+main .section.centered a.button {
+  background-color: var(--link-color);
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 16px 48px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+main .section.centered a.button:hover {
+  background-color: var(--link-hover-color);
+}
+
+@media (width >= 900px) {
+  main .section.centered h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  main .section.centered p {
+    font-size: 16px;
+  }
+}
