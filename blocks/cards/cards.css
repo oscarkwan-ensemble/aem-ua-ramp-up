@@ -19,35 +19,37 @@
 }
 
 .cards .cards-card-body {
-  padding: 20px 16px;
+  padding: 10px 0;
 }
 
+/* Location city headings — bold, uppercase, 18px mobile / 24px desktop */
 .cards .cards-card-body h2 {
   font-family: var(--heading-font-family);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: var(--heading-font-size-s);
-  margin-top: 0;
-  color: var(--heading-color);
-}
-
-.cards .cards-card-body p {
-  margin: 4px 0;
-  font-size: var(--body-font-size-s);
+  font-size: 18px;
+  margin: 10px 0;
   color: var(--text-color);
-  line-height: 1.5;
 }
 
-/* Phone numbers and emails should be plain text links, not buttons */
+/* Address text — 14px, gray #7d7d7d, tight leading */
+.cards .cards-card-body p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #7d7d7d;
+  line-height: 1.4;
+}
+
+/* Phone numbers — plain text links, not buttons, 14px */
 .cards .cards-card-body a.button {
   display: inline;
-  margin: 0;
+  margin: 0 0 4px;
   padding: 0;
   border: none;
   border-radius: 0;
   background-color: transparent;
   color: var(--text-color);
-  font-size: var(--body-font-size-s);
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: normal;
   text-transform: none;
@@ -62,27 +64,28 @@
   text-decoration: underline;
 }
 
-/* Email links styling */
+/* Email links — ensemble blue #2886bb */
 .cards .cards-card-body a[href^="mailto:"] {
-  color: var(--link-color);
-  font-size: var(--body-font-size-s);
+  color: #2886bb;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .cards .cards-card-body a[href^="mailto:"]:hover {
-  color: var(--link-hover-color);
+  color: #1f5170;
   text-decoration: underline;
 }
 
 .cards .cards-card-image {
   line-height: 0;
   overflow: hidden;
+  border-radius: 4px;
 }
 
-/* Consistent image sizing across all cards */
+/* Image sizing — 190px lg, 240px xl (matching Ensemble) */
 .cards > ul > li img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -92,7 +95,76 @@
 }
 
 @media (width >= 900px) {
+  .cards .cards-card-body h2 {
+    font-size: 20px;
+  }
+
+  .cards .cards-card-body p {
+    font-size: 14px;
+  }
+
+  .cards .cards-card-body a.button {
+    font-size: 14px;
+  }
+
   .cards > ul > li img {
-    height: 260px;
+    height: 190px;
+  }
+}
+
+@media (width >= 1200px) {
+  .cards .cards-card-body h2 {
+    font-size: 24px;
+  }
+
+  .cards .cards-card-body p,
+  .cards .cards-card-body a.button,
+  .cards .cards-card-body a[href^="mailto:"] {
+    font-size: 16px;
+  }
+
+  .cards > ul > li img {
+    height: 240px;
+  }
+}
+
+/* Team/people cards variant — centered text, name/title/email layout */
+.section.highlight .cards .cards-card-body {
+  text-align: center;
+}
+
+.section.highlight .cards .cards-card-body h2 {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 8px 0 2px;
+}
+
+.section.highlight .cards .cards-card-body p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7d7d7d;
+  letter-spacing: 0.02em;
+}
+
+.section.highlight .cards .cards-card-body a[href^="mailto:"] {
+  color: #2886bb;
+  font-size: 14px;
+}
+
+@media (width >= 1200px) {
+  .section.highlight .cards .cards-card-body h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .section.highlight .cards .cards-card-body p {
+    font-size: 14px;
+  }
+
+  .section.highlight .cards .cards-card-body a[href^="mailto:"] {
+    font-size: 16px;
   }
 }

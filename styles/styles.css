@@ -164,7 +164,6 @@ a:hover {
 }
 
 /* buttons */
-a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
